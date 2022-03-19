@@ -1,6 +1,7 @@
 package hello;
 
 import hello.Barrier.Barrier;
+import hello.ExclusiveQueue.ExclusiveQueue;
 import hello.Multiplex.Multiplex;
 import hello.Mutex.Mutex;
 import hello.Rendezvous.Rendezvous;
@@ -16,5 +17,7 @@ public class Main {
     Multiplex.start();
     Barrier.start();
     ReuseableBarrier.start();
+    hello.ReuseableBarrier.Barrier.test();
+    ExclusiveQueue.test();
   }
 }
