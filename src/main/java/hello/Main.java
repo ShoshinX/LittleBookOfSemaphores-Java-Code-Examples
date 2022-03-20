@@ -4,6 +4,7 @@ import hello.Barrier.Barrier;
 import hello.ExclusiveQueue.ExclusiveQueue;
 import hello.Multiplex.Multiplex;
 import hello.Mutex.Mutex;
+import hello.ProducerConsumer.ProducerConsumerTester;
 import hello.Rendezvous.Rendezvous;
 import hello.ReuseableBarrier.ReuseableBarrier;
 import hello.Signalling.Signalling;
@@ -19,5 +20,6 @@ public class Main {
     ReuseableBarrier.start();
     hello.ReuseableBarrier.Barrier.test();
     ExclusiveQueue.test();
+    ProducerConsumerTester.start();
   }
 }
